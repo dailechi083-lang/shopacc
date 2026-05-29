@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+body{
+ background:black;
+ color:white;
+ text-align:center;
+ font-family:Arial;
+}
+
+button{
+ padding:15px 30px;
+ font-size:20px;
+ background:#00ff99;
+ border:none;
+ border-radius:15px;
+}
+
+#result{
+ margin-top:30px;
+ font-size:35px;
+ color:gold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>RANDOM ACC</h1>
+
+<button onclick="spin()">
+QUAY
+</button>
+
+<div id="result">
+?
+</div>
+
+<script>
+
+function spin(){
+
+ let items = [
+
+ "Acc Trắng",
+ "Acc Skin",
+ "Acc VIP",
+ "Acc Hiếm"
+
+ ];
+
+ let random =
+ items[Math.floor(Math.random()*items.length)];
+
+ document.getElementById("result")
+ .innerHTML = random;
+
+}
+
+</script>
+
+</body>
+</html>
